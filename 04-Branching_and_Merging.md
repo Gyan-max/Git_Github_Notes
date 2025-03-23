@@ -86,5 +86,109 @@ Conglicts occur when the same part of a file has been modified differently in bo
 3. Add the resolved files: ``git add <resolved-file>``
 4. Complete the merge: ``git commit``
 
+### Conflict Markers
+
+Conflict markers in the file look like this:
+
+```
+<<<<<<< HEAD
+changes from the branch you're merging into
+========
+changes from the branch you're merging from
+>>>>>> feature-branch
+
+```
+
+### Using Merge Tools
+
+```
+git mergetool       # Launch configured visual merge tool
+
+```
+
+### Aborting a Merge
+
+```
+git merge --abort   # CAncle the merge and return the pre-merge state
+
+```
+
+## Advanced Merging Strategies
+
+### Squash Merging
+
+Condenses all commits from a branch into a single commit:
+
+```
+git merge --squash feature      # combines all changes without merging histories
+git commit -m "Implement feature X"
+
+```
+### Rebase and Merge
+
+Creates a linear history (covered in more detail in the Advanced Techniques chapter):
+
+```
+git checkout feature
+git rebase main
+git checkout main
+git merge feature       # will be a fash-forward merge
+
+```
+
+## Branching Strategies
+
+### Feature Branch Workflow
+1. Create a branch from each feature/bug: ``git checkout -b feature-x``
+2. Work on the branch, making regular commits
+3. When complete, merge back to main:
+
+```
+git checkout main
+git merge feature-x
+```
+
+### Git FLow
 
 
+A more structured workflow with multiple branch types:
+
+* ``main`` - production-ready code
+* ``develop`` - integration branch
+* ``feature/*`` - for new features
+* ``release/*`` - preparation for releases
+* ``hotfix/*`` - urgent fixes for production 
+
+### GitHub Flow
+
+A simpler workflow
+
+* Branch from ``main``
+* Add commits
+* open Pull Requests
+* Review and discuss
+* Merge to ``main`` and deploy
+
+## Branch Visualization
+
+To visualize our branch structure:
+
+```
+git log --graph --oneline --all --decorate
+
+```
+
+Or use GUI tools like **Sourcetree**, **GitKraken**, or **GitHub Desktop** for a more visual representation.
+
+### Best Practices
+
+1. Use descriptive branch names (``feature/user-authentication``, ``bugfix/login-error`` )
+2. Keep branches focused on single features or fixes
+3. Regularly sync with the base branch to minimize conflicts
+4. Delete branches after merging to keep repository clean
+5. Consider using pull/merge requests for code review
+6. Testing before merging
+
+## Next step
+
+Now that we understand branching and merging , proceed to [Remote Repositories](05-Remote-Repositories.md) to learn how to collaborate with others using GitHub. 
