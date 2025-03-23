@@ -7,7 +7,7 @@ A comprehensive guide to Git and GitHub concepts, commands, and best practices.
 1. [Introduction to Git and GitHub](01-introduction.md)
 2. [Installation and Setup](02-installation-setup.md)
 3. [Basic Git Commands](03-basic-commands.md)
-4. [Branching and Merging](04-Branching_and_Mergiing.md)
+4. [Branching and Merging](04-Branching_and_Merging.md)
 5. [Remote Repositories](05-remote-repositories.md)
 6. [Collaboration Workflow](06-collaboration-workflow.md)
 7. [GitHub Features](07-github-features.md)
