@@ -197,3 +197,81 @@ GitHub **wiki** is a documentation tool that allows teams to create and maintain
 GitHub projects is a Kanban-style task management tool that organizes issues, pull requests, and notes.
 
 > **Note** : Kanban is a workflow management method that visualize work, limit work-in-progress, and optimize efficiency. In GitHub projects, tasks are represented as cards and can be moved between columns (e.g., ``To Do``, ``In Progress``, ``Done``) to represent different stages of a process. Tasks or items are represented as cards that move across the board as they progress through the workflow. In GitHub projects, Kanban-style boards help teams organize and track issues, pull requests and notes. 
+
+### Steps
+
+1. **Create a project board** :
+
+    - Go to the **Projects** tab in the repository.
+    - Click **"New Project"** and choose a template.
+
+2. **Add tasks and track progress** :
+
+    - Add issues and PRs as cards.
+    - Move tasks across columns (**To Do**, **In Progress**, **Done**).
+    - Assign team members and set due dates.
+
+## Code Review
+
+### Overview
+
+GitHub enables **code review** via pull requests, allowing teams to discuss, suggest improvements, and approve changes before merging.
+
+### Steps
+
+1. **Assign reviewers to a PR** :
+
+    - Open the PR and go to the **Reviewers** section.
+    - Assign them menbers for feedback.
+
+2. **Provide comments and approve changes** :
+
+    - Use **inline comments** to suggest improvements.
+    - Click **"Approve"** or **"Review Changes"** based on review.
+
+
+## Security and Access Control
+
+### Overview
+
+GitHub provides **security measures** such as branch protection, access control, and vulnerability scanning to safeguard repositories.
+
+### Steps
+
+1. **Enable branch protection** :
+
+    - Go to **Repository Settings** -> **Branches**.
+    - Set protection rules (e.g., require PR reviews before merging).
+
+2. **Manage team access** :
+
+    - Navigate to **Repository Settings** -> **Manage Access**.
+    - Assign roles (**Admin, Developer, Maintainer, Read-only**) to team members.
+
+3. **Enable vulnerability scanning** :
+
+    - Go to **Repository Settings** -> **Security**.
+    - Enable **dependency scanning** and **code scanning** for vulnerability detection.
+
+
+## Conclusion
+
+GitHub is a powerful platform that enhances software development through **Version control, collaboration, and automation**. Repositories store project files, branches allow parallel development, and pull requests enable structured reviews. Issues and projects improve task management, while GitHub Actions streamline workflows. Understanding these features helps team collaborate efficiently and maintain high-quality codebases.
+
+---
+
+---
+# Summary
+
+- GitHub is a cloud-based platform for version control and collaborative development.
+- Repositories store project files, version history, and collaboration tools.
+- Branches allow parallel development and feature branches.
+- Pull requests enable structured code reviews.
+- GitHub Actions streamlines workflows and automates tasks.
+- Issues and projects improve task management.
+- GitHub Wiki and GitHub Projects are documentation and task management tools.
+- GitHub Security provides vulnerability scanning and access control.
+- GitHub Marketplace offers plugins and extensions.
+- GitHub Security Lab and GitHub Archive Program help secure GitHub.
+- GitHub Copilot and GitHub Codespaces are AI-powered tools for developers.
+
