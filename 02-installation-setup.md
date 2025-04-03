@@ -18,7 +18,7 @@ This guide will walk you through installing Git and setting up your GitHub accou
 ### macOS
 
 #### Using Homebrew (recommended)
-```
+```bash
 brew install git
 ```
 
@@ -27,20 +27,20 @@ brew install git
 2. Run the installer and follow the installation wizard
 
 ### Linux (Debian/Ubuntu)
-```
+```bash
 sudo apt update
 sudo apt install git
 ```
 
 ### Linux (Fedora)
-```
+```bash
 sudo dnf install git
 ```
 
 ## Verifying Installation
 
 To verify Git is installed correctly, open a terminal or command prompt and run:
-```
+```bash
 git --version
 ```
 
@@ -50,14 +50,14 @@ You should see output displaying the installed Git version.
 
 After installing Git, set up your identity with these commands:
 
-```
+```bash
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
 Optional but recommended configurations:
 
-```
+```bash
 # Set default editor (replace with your preferred editor)
 git config --global core.editor "code --wait"  # For VS Code
 
@@ -91,12 +91,12 @@ For increased security with HTTPS, it's recommended to use a personal access tok
 ### Using SSH (Recommended for frequent use)
 
 1. Generate an SSH key pair:
-   ```
+   ```bash
    ssh-keygen -t ed25519 -C "your.email@example.com"
    ```
 
 2. Start the SSH agent:
-   ```
+   ```bash
    # For Windows
    eval "$(ssh-agent -s)"
    
@@ -105,12 +105,12 @@ For increased security with HTTPS, it's recommended to use a personal access tok
    ```
 
 3. Add your SSH key to the agent:
-   ```
+   ```bash
    ssh-add ~/.ssh/id_ed25519
    ```
 
 4. Copy your public key:
-   ```
+   ```bash
    # For Windows
    cat ~/.ssh/id_ed25519.pub | clip
    
